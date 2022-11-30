@@ -1,0 +1,698 @@
+    
+.ctop{
+    width:100%;
+    display:grid;
+    grid-template-columns: 20% 30% 8% 12% 10% 20%; 
+    height:70px;
+   background-color:#98ABED;
+}
+.ctitle{
+   font-size:30px;
+   text-align:center;
+   font-weight:bold;
+    line-height:70px;
+  color:white;
+    cursor:default;
+}
+.cinput{
+    line-height:70px;
+}
+.searchbtn{
+    text-align:center;
+    float:left;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+.cel{
+    cursor:pointer;
+    line-height:70px;
+    font-size:22px;
+    color:white;
+    font-weight:bold;
+}
+.cuser{
+    display:grid;
+   width:100%;
+    grid-template-columns: 35% 30%; 
+    height:70px;
+}
+.username{
+  color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+.identify{
+   
+   color:black;
+   opacity:0.4;
+ font-size:17px;
+}
+.userpic{
+    top:50%;
+    width:60px;
+    height:60px;
+   border-radius:50%;
+}
+.hidden{
+    font-size:1px;
+      opacity:0;
+}
+/* vccontent */
+.vcontent{
+ height:1500px;
+ width:90%;
+ background-color:white;
+background: url(../../static/picture/background5.png),
+url(../../static/picture/background4.png);
+background-size:2100px,1200px;
+background-repeat: no-repeat,no-repeat;
+background-position-x: -20px,250px;
+background-position-y: 200px,100%;
+
+ margin:0 auto;
+}
+.vcc{
+ display:flex;
+ flex-direction: row;
+}
+/* vcright */
+        .vcright{
+               width: 300px;
+               height: 500px;
+               background-color:  gray;
+               position: fixed;
+               right: 50px;
+               text-align: center;
+               transition: 0.6s;
+           
+           }
+     .rightbtnf{
+   position:relative;
+   display:flex;
+   flex-direction:column;
+   top:40%;
+   left:-5%;
+     }
+           .rightbtnf #rbtn1:hover{
+          transform: scale(1.6);
+     }
+       .rightbtnf #rbtn2:hover{
+          transform: scale(1.6);
+     }
+.rightbtn{
+width:20px;
+height:80px;
+position:relative;
+text-align:center;
+left:5%;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+cursor:pointer;
+background-color:rgba(168, 179, 191, 0.584);
+}
+.rightbtn2{
+width:20px;
+ height:80px;
+position:relative;
+text-align:center;
+left:-20px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+cursor:pointer;
+   transition: 0.6s;
+background-color:rgba(168, 179, 191, 0.584);
+}
+/* vcbicon */
+.vcbicon{
+ width:50px;
+ height:20px;
+ margin:15px;
+ left:25px;
+ text-align:center;
+ cursor:pointer;
+     transition: 0.6s;
+}
+.vcbicon:hover{
+ transform: scale(1.1);
+   transition: 0.6s;
+}
+/* state */
+.state1{
+ z-index:1;
+     height:460px;
+       background-color:white;
+       font-size: 14px;
+        position:relative;
+              top:5px;
+               left:70px;
+        border-radius:15px;
+           box-shadow:2px 2px 5px gray;
+   width:400px;
+    transition: 0.5s;
+   }
+.state2{
+       font-size: 14px;
+        background-color:transparent;
+        position:relative;
+        top:95px;
+        width:10px;
+        left:80px;
+           border-radius:15px;
+         height:460px;
+       transition: 0.5s;
+   }
+   .state2 div{
+     width:0px;
+     display:none;
+     transition: 0.6s;
+   }
+.videos1{
+  height:500px;
+ position:relative;
+ width:850px;
+ left:35px;
+ transition:0.4s;
+}
+.videos2{
+   position:relative;
+     left:35px;
+width:1250px;
+transition:0.4s;
+}
+/* vcstate div */
+.pdivt1{
+  height:35px;
+  width:85px;
+  cursor:pointer;
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+  margin: 5px;
+  transition: 1s;
+}
+.pdivt1:hover{
+
+ border-width:1px;
+border-bottom-style: solid;
+  border-color:#0459FF;
+  transition:0.6s;
+}
+.pdivt2:hover{
+
+ border-width:1px;
+border-bottom-style: solid;
+  border-color:#0459FF;
+  transition:0.6s;
+}
+.pdivt2{
+
+ height:35px;
+  width:85px;
+  cursor:pointer;
+  text-align:center;
+  color:gray;
+  font-size:17px;
+   font-weight:bolder;
+      margin: 5px;
+   opacity:0.9;
+    transition: 1s;
+}
+/* 0 */
+.collitem{
+ background-color:whitesmoke;
+ width:80%;
+ margin:0 auto;
+background: url(../../static/picture/background.png);
+background-size:cover;
+background-position-y: 50px;
+padding-top:5px;
+}
+.vrconlimg{
+ position:relative;
+ left:13px;
+ top:5px;
+  width:20px;
+  height:22px;
+  cursor:pointer;
+  border-radius:50%;
+
+}
+.vrconlimg:hover {
+  cursor:pointer;
+   content: url(../../static/picture/bofangclick.png);
+   /* 用content来改变img */
+}
+
+.vcollapse{
+ margin:0 auto;
+ width:80%;
+   overflow:auto;
+}
+.vrbtm{
+z-index: -1;
+  background-color:yellow;
+  height:250px;
+  width:100%;
+   position:absolute;
+  bottom:1px;
+  background-size:cover;
+   background-repeat: no-repeat;
+  background: url(../../static/picture/background.png);
+}
+/* 1 */
+.vcrli{
+ list-style-type:none;
+}
+.vcritem{
+ background-color:#e6e6e6;
+ position:relative;
+ left:50px;
+ width:150px;
+ border-radius:5px;
+ word-break: break-all; 
+   word-wrap: break-word;
+   border-width:1px;
+  border-style:groove;
+ /* 设置超出部分换行 */
+}
+.vcrtri{     
+ position:relative;
+ top:-10px;
+
+ left:55%;
+ width:20px;
+ height:20px;
+ 
+}
+.vcrname{
+ 
+ position:relative;
+ text-align:center;
+ top:-45px;
+ height:50px;
+ left:75%;
+ width:50px;
+ border-radius:5px;  
+}
+.vcbottom{
+text-align:center;
+background-color:white;
+width:100%;
+height:70px;
+margin:0 auto;
+border-bottom-left-radius:  15px ;
+border-bottom-right-radius:  15px ;
+border-width:1px;
+border-style:groove;
+position:relative;
+bottom:40px;
+}
+.vcinput{
+ margin:10px;
+ border-radius:5px;
+  height:45px;
+ width:70%;
+}
+.vcinputbtn{
+ cursor:pointer;
+ position:relative;
+ top:15px;
+width:15%;
+height:40px;
+}
+/* 2 */
+.vc2input{
+ width:90%;
+ margin:0 auto;
+ position:relative;
+ top:-25px;
+}
+.vc2c{
+ position:relative;
+ left:5%;
+ top:-20px;
+ width:95%;
+ height:330px;
+ border-bottom-right-radius:15px;
+}
+.vc2citem{
+ width:80%;
+ height:50px;
+ margin:10px;
+ cursor:pointer;
+ padding-left:25px;
+   position:relative;
+   left:0px;
+background: url(../../static/picture/background3.png);
+background-size:cover;
+ border-style:groove;
+border-width: 1px;
+border-radius:10px;
+transition: 0.6s;
+}
+.vc2citem:hover{
+ position:relative;
+ left:15px;
+ transition: 0.6s;
+
+}
+.vc2cpic2{
+ z-index:15;
+ position:relative;
+ left:8%;
+ top:-110px;
+ border-radius:15px;
+width:70%;
+height:100px
+}
+.vc2cpic1{
+ z-index:16;
+ position:relative;
+ left:65%;
+ top:-70px;
+ border-radius:15px;
+width:90px;
+height:50px
+}
+.vc2cfix{
+ cursor:pointer;
+ z-index:15;
+ position:absolute;
+ left:75%;
+ top:70%;
+ background-color:red;
+ background:url(../../static/picture/add1.png);
+ background-size:cover;
+ height:50px;
+ width:50px;
+ transition: 0.6s;
+}
+.vc2cfix:hover{
+   cursor:pointer;
+   background:url(../../static/picture/add2.png);
+ background-size:cover;
+   transition: 0.6s;
+}
+.vc2top1{
+ font-size:14px;
+ position:relative;
+ font-weight:bold;
+ left:5px;
+}
+.vc2top2{
+ font-size:14px;
+ position:relative;
+ font-weight:bold;
+ left:60%;
+}
+/* 3 */
+.vc3area{
+ width:85%;
+ margin:0 auto;
+}
+.vokbtn{
+ position:absolute;
+ left:87%;
+ bottom:5px;
+ width:40px;
+ height:40px;
+transition:0.6s;
+}
+.vokbtn:hover{
+    cursor:pointer;
+   content: url(../../static/picture/ok2.png);
+   transition:0.6s;
+   /* 用content来改变img */
+}
+.vbackbtn{
+ position:absolute;
+ bottom:5px;
+ width:40px;
+ height:40px;
+transition:0.6s;
+}
+.vbackbtn:hover{
+    cursor:pointer;
+   content: url(../../static/picture/back2.png);
+   transition:0.6s;
+   /* 用content来改变img */
+}
+/* BOTTOM TOP*/
+.vbdivt1{
+  height:35px;
+  width:130px;
+  cursor:pointer;
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+  margin: 5px;
+  transition: 1s;
+}
+.vbdivt1:hover{
+ border-width:1px;
+border-bottom-style: solid;
+  border-color:#0459FF;
+  transition:0.6s;
+}
+.vbdivt2:hover{
+
+ border-width:1px;
+border-bottom-style: solid;
+  border-color:#0459FF;
+  transition:0.6s;
+}
+.vbdivt2{
+
+ height:35px;
+  width:130px;
+  cursor:pointer;
+  text-align:center;
+  color:gray;
+  font-size:17px;
+   font-weight:bolder;
+      margin: 5px;
+   opacity:0.9;
+    transition: 1s;
+}
+.vbdivt3{
+  height:35px;
+  width:130px;
+  cursor:pointer;
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+ padding-top:5px;
+ margin-left:50px;
+  border-radius:5px;
+  background-color:#DBE3FF;
+  transition: 1s;
+  color:#013FB8;
+}
+.vbdivt3:hover{
+ background-color:#bac4e6;
+  transition:0.6s;
+}
+.vbdivt4:hover{
+  background-color:#dfd9d9;
+  transition:0.6s;
+}
+.vbdivt4{
+ color:gray;
+  height:35px;
+  width:130px;
+  cursor:pointer;
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+ padding-top:5px;
+  border-radius:5px;
+  background-color:#F8F8F8;
+  transition: 1s;
+ margin-left:50px;
+}
+/* vbc */
+/* 0 */
+.vbc0{
+ display:flex;
+ flex-direction: row;
+ position:relative;
+ background-color:white;
+ height:200px;
+ width:96%;
+ border-radius: 15px;
+ margin:0 auto;
+ box-shadow: 20px 20px 50px whitesmoke;
+}
+.vbc01{
+ text-indent: 2em;
+ width:60%;
+ font-size:16px;
+color:gray;
+ opacity:0.9;
+ margin-right: 50px;
+ margin-left: 30px;
+margin-top: 10px;
+}
+.vbc02{
+ width:40%;
+
+}
+.vbc02d{
+ position:relative;
+ left:13%;
+ top:20%;
+ background-color:#7A80FF;
+ border-radius:20px;
+ width:120px;
+ height:30px;
+ color:white;
+ font-weight:bold;
+ font-size:17px;
+ text-align:center;
+ padding-top:5px;
+ box-shadow: 2px 2px 3px gray ;
+ cursor:pointer;
+}
+.vbc02d:hover{
+ cursor:pointer;
+ background-color:#4f55be;
+}
+.vbc01_other{
+ text-indent: 2em;
+ width:60%;
+ font-size:16px;
+ height:45%;
+ background-color:whitesmoke;
+ opacity:0.9;
+ margin-right: 50px;
+ margin-left: 30px;
+ margin-top:15px;
+}
+/* 2 */
+.vb2item{
+ width:90%;
+ background-color:white;
+ border-radius:5px;
+ box-shadow: 20px 20px 50px whitesmoke ;
+ margin:0 auto;
+ margin-top:15px;
+ height:100px;
+ border-radius:10px;
+}
+.vb2pic{
+ width:50px;
+ height:50px;
+ border-radius:50%;
+}
+.vb2itempic1{
+ width:20px;
+ height:20px;
+ position:relative;
+ left:85%;
+   transition: 0.6s;
+   cursor:pointer;
+}
+.vb2itempic1:hover{
+   transform: scale(1.1);
+ transition: 0.6s;
+}
+.vb2itempic2{
+ width:20px;
+ height:20px;
+ position:relative;
+ left:90%;
+ top:-22px;
+   cursor:pointer;
+}
+.vb2itempic2:hover{
+   transform: scale(1.1);
+ transition: 0.6s;
+}
+
+.iwannasay{
+  margin-top:50px;
+  margin-left:85%;
+  font-size:18px;
+  width:130px;
+  line-height:40px;
+  height:40px;
+  text-align:center;
+  background-color:
+  rgba(1, 63, 184, 1);
+  color:white;
+  font-weight:bold;
+  transition:0.6s;
+  border-radius:15px;
+}
+.iwannasay:hover{
+  cursor:pointer;
+  transition:0.6s;
+  background-color:
+  rgb(87, 116, 173);
+}
+
+
+.vprimary1{
+  height:25px;width:25px;
+  content:url("../../static/picture/love1.png")
+}
+.vprimary2{
+  height:25px;width:25px;
+  content:url("../../static/picture/love2.png")
+}
+.vsstar1{
+  height:30px;width:35px;
+  content:url("../../static/picture/star1.png")
+}
+.vsstar2{
+  height:30px;width:35px;
+  content:url("../../static/picture/star2.png")
+}
+/* 4 */
+.vp4back{
+  width:100%;
+  margin:0 auto;
+  height:400px;
+  position:relative;
+  top:-20px;
+  border-radius:15px;
+  background:url("../../static/picture/background2.png") no-repeat;
+  background-position-y: 50px;
+  background-size:cover;
+  
+}
+.vp4content{
+  width:100%;
+  position:relative;
+  top:15px;
+  left:25px;
+}
+.vdeletebtn{
+  width:35px;
+  height:35px;
+  margin-top:315px;
+  margin-left:350px;
+  transition:0.6s;
+}
+.vdeletebtn:hover{
+ cursor:pointer;
+  transition:0.6s;
+transform:scale(1.1);
+}
+
+.vcbtag{
+  cursor:pointer;
+  margin-top:15px;margin-left:50px;
+  width:100px;background-color:#9c9fe7;
+  height:30px;line-height:30px;
+  text-align:center;
+  border-radius:15px;
+  font-size:16px;
+  color:white;
+  transition:0.6s;
+}
+.vcbtag:hover{
+  transition:0.6s;
+  background-color:#4f55be;
+}
